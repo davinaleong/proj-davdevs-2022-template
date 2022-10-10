@@ -209,7 +209,7 @@
     }
 }
 
-@each $key, $value in $spacers {
+@each $key, $value in $sizes {
     .m-#{$key} {
         margin-left: $value;
         margin-right: $value;
@@ -277,6 +277,78 @@
     }
 
     .br-#{$key} {
+        border-radius: $value;
+    }
+}
+
+@each $key, $value in $rsizes {
+    .m-r-#{$key} {
+        margin-left: $value;
+        margin-right: $value;
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+
+    .m-r-x-#{$key} {
+        margin-left: $value;
+        margin-right: $value;
+    }
+
+    .m-r-y-#{$key} {
+        margin-top: $value;
+        margin-bottom: $value;
+    }
+
+    .m-r-l-#{$key} {
+        margin-left: $value;
+    }
+
+    .m-r-r-#{$key} {
+        margin-right: $value;
+    }
+
+    .m-r-t-#{$key} {
+        margin-top: $value;
+    }
+
+    .m-r-b-#{$key} {
+        margin-bottom: $value;
+    }
+
+    .p-r-#{$key} {
+        padding-left: $value;
+        padding-right: $value;
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+
+    .p-r-x-#{$key} {
+        padding-left: $value;
+        padding-right: $value;
+    }
+
+    .p-r-y-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+
+    .p-r-l-#{$key} {
+        padding-left: $value;
+    }
+
+    .p-r-r-#{$key} {
+        padding-right: $value;
+    }
+
+    .p-r-t-#{$key} {
+        padding-top: $value;
+    }
+
+    .p-r-b-#{$key} {
+        padding-bottom: $value;
+    }
+
+    .br-r-#{$key} {
         border-radius: $value;
     }
 }

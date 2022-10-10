@@ -243,16 +243,9 @@ $colors: (
 
 // C.2. Font Families
 $families: (
-  "arial": #{Arial,
-  sans-serif},
-  "verdana": #{Verdana,
-  sans-serif},
-  "times-new-roman": #{"Times New Roman",
-  serif},
-  "courier-new": #{"Courier New",
-  monospace},
-  "nunito": #{Nunito,
-  sans-serif},
+  "primary": #{Nunito, Arial, sans-serif},
+  "secondary": #{Montserrat, Verdana, sans-serif},
+  "monospace": #{"Anonymous Pro", "Courier New", monospace},
 );
 
 @function family($family) {
@@ -265,21 +258,21 @@ $families: (
 }
 
 // C.3. Font Sizes
-$sizes: (
+$fsizes: (
   base: 16px,
-  100: 0.6rem,
-  200: 0.8rem,
-  300: 0.9rem,
-  400: 1rem,
-  500: 1.2rem,
-  600: 1.5rem,
-  700: 2rem,
-  800: 2.5rem,
-  900: 3.5rem,
+  100: clamp(0.7rem, 1rem + 1vw, 0.8rem),
+  200: clamp(0.8rem, 1rem + 1vw, 0.9rem),
+  300: clamp(0.9rem, 1rem + 1vw, 1rem),
+  400: clamp(1rem, 1rem + 1vw, 1.25rem),
+  500: clamp(1.25rem, 1rem + 1vw, 1.5rem),
+  600: clamp(1.5rem, 1rem + 1vw, 1.75rem),
+  700: clamp(1.5rem, 1rem + 1vw, 2rem),
+  800: clamp(3rem, 1rem + 1vw, 4rem),
+  900: clamp(4rem, 1rem + 1vw, 5rem),
 );
 
-@function size($size) {
-  $value: map-get($sizes, $size);
+@function fsize($fsize) {
+  $value: map-get($fsizes, $fsize);
   @if $value {
     @return $value;
   } @else {
@@ -326,7 +319,7 @@ $styles: (
 }
 
 // C.6. Spacers
-$spacers: (
+$sizes: (
   "auto": auto,
   0: 0,
   50: 0.25rem,
@@ -342,8 +335,8 @@ $spacers: (
   1000: 7rem,
 );
 
-@function spacer($spacer) {
-  $value: map-get($spacers, $spacer);
+@function size($size) {
+  $value: map-get($sizes, $size);
   @if $value {
     @return $value;
   } @else {
@@ -352,7 +345,41 @@ $spacers: (
 }
 
 @function border-radius($size) {
-  $value: map-get($spacers, $size);
+  $value: map-get($sizes, $size);
+  @if $value {
+    @return $value;
+  } @else {
+    @return "";
+  }
+}
+
+$rsizes: (
+  "auto": auto,
+  0: 0,
+  50: 0.25em,
+  100: 0.5em,
+  200: 0.75em,
+  300: 1em,
+  400: 1.5em,
+  500: 2em,
+  600: 3em,
+  700: 4em,
+  800: 5em,
+  900: 6em,
+  1000: 7em,
+);
+
+@function rsize($rsize) {
+  $value: map-get($rsizes, $rsize);
+  @if $value {
+    @return $value;
+  } @else {
+    @return "";
+  }
+}
+
+@function r-border-radius($rsize) {
+  $value: map-get($rsizes, $rsize);
   @if $value {
     @return $value;
   } @else {
