@@ -97,11 +97,17 @@ body {
     font-size: var(--fsize-400);
     font-family: var(--ff-primary);
     font-weight: var(--fw-medium);
-    color: var(--clr-gray-50);
-    background-color: var(--clr-gray-900);
+    // color: var(--clr-gray-50);
+    // background-color: var(--clr-gray-900);
 }
 
 code, .code {
     font-family: var(--ff-monospace);
     font-weight: var(--fw-regular);
+}
+
+.container {
+    --container-max-width: 1110px;
+    width: min(100vh - size(400), var(--container-max-width));
+    margin-inline: size("auto");
 }
