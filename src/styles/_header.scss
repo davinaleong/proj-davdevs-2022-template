@@ -1,8 +1,8 @@
 .main-header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  color: color("gray", 900);
-  background-color: color("yellow", 500);
+  color: var(--clr-gray-900);
+  background-color: var(--clr-primary-500);
 }
 
 .main-nav {
@@ -39,7 +39,7 @@
 }
 
 .btn-header:where(:hover) .brand-line {
-  --line-clr: #{color("deep-orange", 500)};
+  --line-clr: var(--clr-accent-2-500);
 }
 
 .dropdown-toggle {
