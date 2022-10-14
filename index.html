@@ -18,8 +18,8 @@
   </head>
   <body>
     <main class="content">
-      <header class="main-header" data-element="main-header">
-        <nav class="main-nav" data-element="nav-mobile">
+      <header class="main-header" data-element="main-header" data-expanded="true">
+        <nav class="main-nav" data-element="main-nav-mobile">
           <ul class="nav-list" role="list">
             <li class="nav-list-item">
               <a href="#" class="btn btn-header">
@@ -34,16 +34,20 @@
           </ul>
         </nav>
 
-        <nav class="main-nav" data-element="nav-left">
+        <a href="#" class="btn btn-header" data-element="main-header-close">
+          <i class="fa-solid fa-times"></i>
+        </a>
+
+        <nav class="main-nav" data-element="main-nav-left">
           <ul class="nav-list" role="list">
             <li class="nav-list-item">
               <a
                 href="#"
-                class="btn btn-header dropdown-toggle"
+                class="btn btn-header dropdown-toggle" data-element="main-header-dropdown-toggle"
                
                 >About</a
               >
-              <ul class="dropdown-menu" role="list">
+              <ul class="dropdown-menu" role="list" data-element="main-header-dropdown-menu">
                 <li class="nav-list-item">
                   <a href="#" class="btn btn-header-dropdown">All Skills</a>
                 </li>
@@ -58,21 +62,19 @@
           </ul>
         </nav>
 
-        <nav class="main-nav" data-element="nav-center">
+        <nav class="main-nav" data-element="main-nav-center">
           <ul class="nav-list" role="list">
             <li class="nav-list-item">
               <a
                 href="#"
-                class="btn btn-header dropdown-toggle"
+                class="btn btn-header dropdown-toggle" data-element="main-header-dropdown-toggle"
                
               >
-                <div class="main-brand">
-                  <div class="brand-line"></div>
-                  <div class="ff-secondary fsize-500">D/D</div>
-                  <div class="brand-line"></div>
-                </div>
+                <div class="brand-line"></div>
+                <div class="ff-secondary fsize-500">D/D</div>
+                <div class="brand-line"></div>
               </a>
-              <ul class="dropdown-menu" role="list">
+              <ul class="dropdown-menu" role="list" data-element="main-header-dropdown-menu">
                 <li class="nav-list-item">
                   <a href="#" class="btn btn-header-dropdown">Home</a>
                 </li>
@@ -102,11 +104,11 @@
           </ul>
         </nav>
 
-        <nav class="main-nav" data-element="nav-right">
+        <nav class="main-nav" data-element="main-nav-right">
           <ul class="nav-list" role="list">
             <li class="nav-list-item">
-              <a href="#" class="btn btn-header dropdown-toggle">Resume</a>
-              <ul class="dropdown-menu" role="list">
+              <a href="#" class="btn btn-header dropdown-toggle" data-element="main-header-dropdown-toggle">Resume</a>
+              <ul class="dropdown-menu" role="list" data-element="main-header-dropdown-menu">
                 <li class="nav-list-item">
                   <a href="#" class="btn btn-header-dropdown">Name</a>
                 </li>
