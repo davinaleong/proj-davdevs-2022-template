@@ -91,6 +91,12 @@
   --size-800: #{rsize(800)};
   --size-900: #{rsize(900)};
   --size-1000: #{rsize(1000)};
+
+  --height-header: 58px;
+}
+
+* {
+  position: relative;
 }
 
 body {
@@ -174,9 +180,9 @@ sup,
 }
 
 .btn-header {
+  --btn-padding: #{size(100)};
   --btn-box-shadow: none;
   --btn-border-radius: 0;
-  // --btn-align-items: stretch;
 
   --btn-clr: #{color("gray", 800)};
   --btn-clr-bg: #{color("yellow", 500)};
@@ -187,4 +193,19 @@ sup,
   --btn-clr-hover-border: #{color("yellow", 300)};
 
   height: 100%;
+}
+
+.btn-header-dropdown {
+  --btn-padding: #{size(100)};
+  --btn-box-shadow: none;
+  --btn-border-radius: 0;
+  --btn-justify-content: start;
+
+  --btn-clr: #{color("gray", 800)};
+  --btn-clr-bg: transparent;
+  --btn-clr-border: transparent;
+
+  --btn-clr-hover: #{color("deep-orange", 500)};
+  --btn-clr-hover-bg: transparent;
+  --btn-clr-hover-border: transparent;
 }
