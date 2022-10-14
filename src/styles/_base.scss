@@ -80,6 +80,7 @@
 
   --size-auto: #{r-size("auto")};
   --size-0: #{r-size(0)};
+  --size-10: #{r-size(10)};
   --size-50: #{r-size(50)};
   --size-100: #{r-size(100)};
   --size-200: #{r-size(200)};
@@ -150,12 +151,12 @@ sup,
 }
 
 .btn {
-  --btn-padding: #{size(50)};
+  --btn-padding: var(--size-50);
   --btn-box-shadow: #{box-shadow(400)};
   --btn-border-radius: #{r-border-radius(50)};
   --btn-align-items: center;
   --btn-justify-content: center;
-  --btn-gap: 0;
+  --btn-gap: var(--size-50);
 
   --btn-clr: var(--clr-gray-800);
   --btn-clr-bg: var(--clr-gray-50);
@@ -202,10 +203,11 @@ sup,
 }
 
 .btn-header-dropdown {
-  --btn-padding: #{size(100)};
+  --btn-padding: var(--size-100);
   --btn-box-shadow: none;
   --btn-border-radius: 0;
   --btn-justify-content: start;
+  --btn-gap: var(--size-10);
 
   --btn-clr: var(--clr-gray-900);
   --btn-clr-bg: var(--clr-primary-300);
@@ -237,4 +239,5 @@ sup,
   display: flex;
   align-items: stretch;
   justify-content: var(--nav-list-justify-content);
+  flex-wrap: wrap;
 }
