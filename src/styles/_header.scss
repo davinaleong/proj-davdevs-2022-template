@@ -1,8 +1,8 @@
 .main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: var(--clr-gray-900);
@@ -20,25 +20,16 @@
 }
 
 [data-element="main-header-close"] {
-    --size: var(--size-300);
+  --size: var(--size-300);
 
-    display: none;
-    position: fixed;
-    top: var(--size-400);
-    right: var(--size-400);
-    width: var(--size);
-    height: var(--size);
-    font-size: var(--fsize-600);
-    z-index: 3;
-}
-
-.nav-list {
-    --nav-list-justify-content: center;
-
-  height: 100%;
-  display: flex;
-  align-items: stretch;
-  justify-content: var(--nav-list-justify-content);
+  display: none;
+  position: fixed;
+  top: var(--size-400);
+  right: var(--size-400);
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--fsize-600);
+  z-index: 3;
 }
 
 // .main-brand {

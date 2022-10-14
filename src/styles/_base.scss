@@ -215,3 +215,26 @@ sup,
   --btn-clr-hover-bg: var(--clr-primary-100);
   --btn-clr-hover-border: var(--clr-primary-100);
 }
+
+.btn-footer {
+  --btn-padding: 0;
+  --btn-box-shadow: none;
+  --btn-border-radius: 0;
+
+  --btn-clr: var(--clr-gray-900);
+  --btn-clr-bg: transparent;
+  --btn-clr-border: transparent;
+
+  --btn-clr-hover: var(--clr-accent-2-500);
+  --btn-clr-hover-bg: transparent;
+  --btn-clr-hover-border: transparent;
+}
+
+.nav-list {
+  --nav-list-justify-content: center;
+
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: var(--nav-list-justify-content);
+}
