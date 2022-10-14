@@ -42,6 +42,17 @@
   --line-clr: #{color("deep-orange", 500)};
 }
 
+.dropdown-toggle {
+    --btn-gap: var(--size-100);
+}
+
+.dropdown-toggle::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    display: block;
+    font-size: var(--fsize-100);
+}
+
 .dropdown-menu {
   --dropdown-menu-width: 18ch;
 
