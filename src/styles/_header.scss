@@ -180,8 +180,10 @@
 
   .main-header[data-expanded="true"] .dropdown-menu {
     display: none;
+    width: 100%;
     position: static;
     width: 100%;
+    overflow: hidden;
   }
 
   .main-header[data-expanded="true"] .dropdown-menu[data-expanded="true"] {
@@ -192,7 +194,7 @@
     display: block;
   }
 
-  .main-header[data-expanded="true"] .dropdown-menu .nav-list-item {
+  .main-header[data-expanded="true"] .dropdown-menu * {
     width: 100%;
   }
 }
