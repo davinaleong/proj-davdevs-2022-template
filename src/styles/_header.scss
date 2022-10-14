@@ -1,0 +1,53 @@
+.main-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: color("gray", 900);
+    background-color: color("yellow", 500);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+[data-element="nav-mobile"] {
+    display: none;
+}
+
+.nav-list {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+// .nav-list-item {
+//     display: flex;
+//     justify-content: center;
+//     align-items: stretch;
+// }
+
+.dropdown-menu {
+    display: none;
+}
+
+.main-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: size(200);
+}
+
+.brand-line {
+    --line-height: 1px;
+    --line-width: 2em;
+    --line-clr: #{color("gray", 900)};
+
+    width: var(--line-width);
+    height: var(--line-height);
+    background-color: var(--line-clr);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-header:where(:hover) .brand-line {
+    --line-clr: #{color("deep-orange", 500)};
+}

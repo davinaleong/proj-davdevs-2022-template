@@ -101,6 +101,10 @@ body {
   background-color: var(--clr-gray-900);
 }
 
+:focus {
+  outline: 2px dashed color("deep-orange", 500);
+}
+
 code,
 .code {
   font-family: var(--ff-monospace);
@@ -133,4 +137,54 @@ sup,
   --container-max-width: 1110px;
   width: min(100vw - size(400), var(--container-max-width));
   margin-inline: size("auto");
+}
+
+.btn {
+  --btn-padding: #{size(50)};
+  --btn-box-shadow: #{box-shadow(400)};
+  --btn-border-radius: #{r-border-radius(50)};
+  --btn-align-items: center;
+  --btn-justify-content: center;
+
+  --btn-clr: #{color("gray", 800)};
+  --btn-clr-bg: #{color("gray", 50)};
+  --btn-clr-border: #{color("gray", 50)};
+
+  --btn-clr-hover: #{color("gray", 50)};
+  --btn-clr-hover-bg: #{color("gray", 800)};
+  --btn-clr-hover-border: #{color("gray", 800)};
+
+  display: flex;
+  align-items: var(--btn-align-items);
+  justify-content: var(--btn-justify-content);
+  padding: var(--btn-padding);
+  box-shadow: var(--btn-box-shadow);
+  color: var(--btn-clr);
+  background-color: var(--btn-clr-bg);
+  border: thin solid var(--btn-clr-border);
+  border-radius: var(--btn-border-radius);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:where(:hover) {
+  color: var(--btn-clr-hover);
+  background-color: var(--btn-clr-hover-bg);
+  border-color: var(--btn-clr-hover-border);
+}
+
+.btn-header {
+  --btn-box-shadow: none;
+  --btn-border-radius: 0;
+  // --btn-align-items: stretch;
+
+  --btn-clr: #{color("gray", 800)};
+  --btn-clr-bg: #{color("yellow", 500)};
+  --btn-clr-border: #{color("yellow", 500)};
+
+  --btn-clr-hover: #{color("deep-orange", 500)};
+  --btn-clr-hover-bg: #{color("yellow", 300)};
+  --btn-clr-hover-border: #{color("yellow", 300)};
+
+  height: 100%;
 }

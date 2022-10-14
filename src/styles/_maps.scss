@@ -356,7 +356,7 @@ $sizes: (
 $rsizes: (
   "auto": auto,
   0: 0,
-  50: 0.25em,
+  50: 0.1em,
   100: 0.5em,
   200: 0.75em,
   300: 1em,
@@ -369,7 +369,7 @@ $rsizes: (
   1000: 7em,
 );
 
-@function rsize($rsize) {
+@function r-size($rsize) {
   $value: map-get($rsizes, $rsize);
   @if $value {
     @return $value;
