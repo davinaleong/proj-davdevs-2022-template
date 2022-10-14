@@ -20,7 +20,16 @@
 }
 
 [data-element="main-header-close"] {
+    --size: var(--size-300);
+
     display: none;
+    position: fixed;
+    top: var(--size-400);
+    right: var(--size-400);
+    width: var(--size);
+    height: var(--size);
+    font-size: var(--fsize-600);
+    z-index: 3;
 }
 
 .nav-list {
@@ -128,6 +137,10 @@
     width: calc(100vw - var(--size-400));
     height: calc(100vh - var(--size-400));
     overflow-y: auto;
+  }
+
+  .main-header[data-expanded="true"] [data-element="main-header-close"] {
+    display: flex;
   }
 
   .main-header[data-expanded="true"] [data-element="main-nav-mobile"] {

@@ -165,7 +165,7 @@ sup,
   --btn-clr-hover-bg: var(--clr-gray-800);
   --btn-clr-hover-border: var(--clr-gray-800);
 
-  display: inline-flex;
+  display: flex;
   align-items: var(--btn-align-items);
   justify-content: var(--btn-justify-content);
   gap: var(--btn-gap);
