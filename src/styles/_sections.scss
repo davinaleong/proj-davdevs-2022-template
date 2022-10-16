@@ -1,0 +1,86 @@
+.section {
+  --section-clr-bg: transparent;
+
+  --section-inner-padding: var(--size-400) 0;
+  --section-inner-min-height: 100vh;
+
+  --section-pseudo-height: var(--section-decoration-height);
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-clr-bg);
+}
+
+.section::after {
+  --clr-section-decoration-start: var(--clr-gray-400);
+  --clr-section-decoration-end: var(--clr-gray-500);
+  --section-decoration-direction: to bottom right;
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: var(--section-decoration-height);
+  background-image: linear-gradient(
+    var(--section-decoration-direction),
+    var(--clr-section-decoration-start) 0%,
+    var(--clr-section-decoration-start) 49%,
+    var(--clr-section-decoration-end) 50%,
+    var(--clr-section-decoration-end) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section.section-gray-900-to-gray-800::after {
+  --clr-section-decoration-start: var(--clr-gray-900);
+  --clr-section-decoration-end: var(--clr-gray-800);
+}
+
+.section.section-gray-900-to-primary-300::after {
+  --clr-section-decoration-start: var(--clr-gray-900);
+  --clr-section-decoration-end: var(--clr-primary-300);
+}
+
+.section.section-gray-800-to-gray-900::after {
+  --clr-section-decoration-start: var(--clr-gray-800);
+  --clr-section-decoration-end: var(--clr-gray-900);
+}
+
+.section.section-gray-800-to-primary-300::after {
+  --clr-section-decoration-start: var(--clr-gray-800);
+  --clr-section-decoration-end: var(--clr-primary-300);
+}
+
+.section.section-primary-300-to-gray-900::after {
+  --clr-section-decoration-start: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-gray-900);
+}
+
+.section.section-primary-300-to-gray-800::after {
+  --clr-section-decoration-start: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-gray-800);
+}
+
+.section.section-reverse::after {
+  --section-decoration-direction: to bottom left;
+}
+
+.section-inner {
+  min-height: calc(
+    var(--section-inner-min-height) - var(--section-inner-pseudo-height) -
+      var(--header-height)
+  );
+  padding: var(--section-inner-padding);
+}
+
+.section-gray-900 {
+  --section-clr-bg: var(--clr-gray-900);
+}
+
+.section-gray-800 {
+  --section-clr-bg: var(--clr-gray-800);
+}
+
+.section-primary-300 {
+  --section-clr-bg: var(--clr-primary-300);
+}

@@ -243,9 +243,15 @@ $colors: (
 
 // C.2. Font Families
 $families: (
-  "primary": #{Nunito, Arial, sans-serif},
-  "secondary": #{Montserrat, Verdana, sans-serif},
-  "monospace": #{"Anonymous Pro", "Courier New", monospace},
+  "primary": #{Nunito,
+  Arial,
+  sans-serif},
+  "secondary": #{Montserrat,
+  Verdana,
+  sans-serif},
+  "monospace": #{"Anonymous Pro",
+  "Courier New",
+  monospace},
 );
 
 @function family($family) {
@@ -322,7 +328,8 @@ $styles: (
 $sizes: (
   "auto": auto,
   0: 0,
-  50: 0.25rem,
+  10: 0.1em,
+  50: 0.2em,
   100: 0.5rem,
   200: 0.75rem,
   300: 1rem,
@@ -353,7 +360,7 @@ $sizes: (
   }
 }
 
-$rsizes: (
+$r-sizes: (
   "auto": auto,
   0: 0,
   10: 0.1em,
@@ -370,8 +377,8 @@ $rsizes: (
   1000: 7em,
 );
 
-@function r-size($rsize) {
-  $value: map-get($rsizes, $rsize);
+@function r-size($r-size) {
+  $value: map-get($r-sizes, $r-size);
   @if $value {
     @return $value;
   } @else {
@@ -379,8 +386,8 @@ $rsizes: (
   }
 }
 
-@function r-border-radius($rsize) {
-  $value: map-get($rsizes, $rsize);
+@function r-border-radius($r-size) {
+  $value: map-get($r-sizes, $r-size);
   @if $value {
     @return $value;
   } @else {

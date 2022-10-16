@@ -281,7 +281,7 @@
     }
 }
 
-@each $key, $value in $rsizes {
+@each $key, $value in $r-sizes {
     .m-r-#{$key} {
         margin-left: $value;
         margin-right: $value;

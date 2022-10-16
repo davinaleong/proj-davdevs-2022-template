@@ -1,7 +1,9 @@
 // E. Base
 
 // E.1. Root
-:root {
+:root,
+::after,
+::before {
   --clr-primary-50: #{$clr-yellow-50};
   --clr-primary-100: #{$clr-yellow-100};
   --clr-primary-200: #{$clr-yellow-200};
@@ -78,22 +80,38 @@
   --fs-normal: #{style("normal")};
   --fs-italic: #{style("italic")};
 
-  --size-auto: #{r-size("auto")};
-  --size-0: #{r-size(0)};
-  --size-10: #{r-size(10)};
-  --size-50: #{r-size(50)};
-  --size-100: #{r-size(100)};
-  --size-200: #{r-size(200)};
-  --size-300: #{r-size(300)};
-  --size-400: #{r-size(400)};
-  --size-500: #{r-size(500)};
-  --size-600: #{r-size(600)};
-  --size-700: #{r-size(700)};
-  --size-800: #{r-size(800)};
-  --size-900: #{r-size(900)};
-  --size-1000: #{r-size(1000)};
+  --size-auto: #{size("auto")};
+  --size-0: #{size(0)};
+  --size-10: #{size(10)};
+  --size-50: #{size(50)};
+  --size-100: #{size(100)};
+  --size-200: #{size(200)};
+  --size-300: #{size(300)};
+  --size-400: #{size(400)};
+  --size-500: #{size(500)};
+  --size-600: #{size(600)};
+  --size-700: #{size(700)};
+  --size-800: #{size(800)};
+  --size-900: #{size(900)};
+  --size-1000: #{size(1000)};
 
-  --header-height: 58px;
+  --r-size-auto: #{r-size("auto")};
+  --r-size-0: #{r-size(0)};
+  --r-size-10: #{r-size(10)};
+  --r-size-50: #{r-size(50)};
+  --r-size-100: #{r-size(100)};
+  --r-size-200: #{r-size(200)};
+  --r-size-300: #{r-size(300)};
+  --r-size-400: #{r-size(400)};
+  --r-size-500: #{r-size(500)};
+  --r-size-600: #{r-size(600)};
+  --r-size-700: #{r-size(700)};
+  --r-size-800: #{r-size(800)};
+  --r-size-900: #{r-size(900)};
+  --r-size-1000: #{r-size(1000)};
+
+  --header-height: 74px;
+  --section-decoration-height: 5rem;
 }
 
 * {
@@ -106,10 +124,6 @@ body {
   font-weight: var(--fw-medium);
   color: var(--clr-gray-50);
   background-color: var(--clr-gray-900);
-}
-
-.content {
-  padding-top: var(--header-height);
 }
 
 :focus {
@@ -137,6 +151,10 @@ sub,
 sup,
 .sup {
   font-size: var(--fsize-300);
+}
+
+.content {
+  padding-top: var(--header-height);
 }
 
 .container-fluid {
@@ -187,7 +205,7 @@ sup,
 }
 
 .btn-header {
-  --btn-padding: #{size(200)};
+  --btn-padding: var(--size-200);
   --btn-box-shadow: none;
   --btn-border-radius: 0;
 
