@@ -59,26 +59,26 @@
   --clr-gray-800: #{$clr-gray-800};
   --clr-gray-900: #{$clr-gray-900};
 
-  --fsize-100: #{fsize(100)};
-  --fsize-200: #{fsize(200)};
-  --fsize-300: #{fsize(300)};
-  --fsize-400: #{fsize(400)};
-  --fsize-500: #{fsize(500)};
-  --fsize-600: #{fsize(600)};
-  --fsize-700: #{fsize(700)};
-  --fsize-800: #{fsize(800)};
-  --fsize-900: #{fsize(900)};
+  --fsize-100: #{$fsize-100};
+  --fsize-200: #{$fsize-200};
+  --fsize-300: #{$fsize-300};
+  --fsize-400: #{$fsize-400};
+  --fsize-500: #{$fsize-500};
+  --fsize-600: #{$fsize-600};
+  --fsize-700: #{$fsize-700};
+  --fsize-800: #{$fsize-800};
+  --fsize-900: #{$fsize-900};
 
-  --ff-primary: #{family("primary")};
-  --ff-secondary: #{family("secondary")};
-  --ff-monospace: #{family("monospace")};
+  --ff-primary: #{$ff-primary};
+  --ff-secondary: #{$ff-secondary};
+  --ff-monospace: #{$ff-monospace};
 
-  --fw-regular: #{weight("regular")};
-  --fw-medium: #{weight("medium")};
-  --fw-bold: #{weight("bold")};
+  --fw-regular: #{$fw-regular};
+  --fw-medium: #{$fw-medium};
+  --fw-bold: #{$fw-bold};
 
-  --fs-normal: #{style("normal")};
-  --fs-italic: #{style("italic")};
+  --fs-normal: #{$fs-normal};
+  --fs-italic: #{$fs-italic};
 
   --size-auto: #{size("auto")};
   --size-0: #{size(0)};
@@ -111,7 +111,7 @@
   --r-size-1000: #{r-size(1000)};
 
   --header-height: 74px;
-  --section-decoration-height: 5rem;
+  --section-decoration-height: 3rem;
 }
 
 * {
