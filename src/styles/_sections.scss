@@ -147,9 +147,12 @@
   display: block;
   position: absolute;
   inset: calc(var(--size-600) * -1);
-  background-color: hsla(0, 0%, 50%, 0.5);
-  // border-radius: 30% 50% 5% 50%;
-  // transform: translate(-3%, -3%);
+  // background-color: hsla(0, 0%, 50%, 0.3);
+  background-image: linear-gradient(
+    to top right,
+    hsla(0, 0%, 50%, 0.3),
+    hsla(0, 0%, 40%, 0.3)
+  );
   animation-name: hero-icon-before;
   animation-timing-function: ease-in-out;
   animation-duration: 5s;
@@ -161,9 +164,15 @@
   display: block;
   position: absolute;
   inset: calc(var(--size-600) * -1);
-  background-color: hsla(0, 0%, 50%, 0.5);
-  border-radius: 30% 30% 40% 30%;
-  transform: translate(3%, 3%);
+  background-image: linear-gradient(
+    to bottom left,
+    hsla(0, 0%, 50%, 0.3),
+    hsla(0, 0%, 40%, 0.3)
+  );
+  animation-name: hero-icon-after;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .section-inner-landing-hero__icon-cell__icon-container__icon {
@@ -193,5 +202,28 @@
   100% {
     border-radius: 30% 50% 5% 50%;
     transform: translate(-3%, -3%);
+  }
+}
+
+@keyframes hero-icon-after {
+  0% {
+    border-radius: 40% 30% 40% 30%;
+    transform: translate(3%, 5%);
+  }
+  25% {
+    border-radius: 30% 40% 30% 40%;
+    transform: translate(-3%, 3%);
+  }
+  50% {
+    border-radius: 40% 30% 40% 30%;
+    transform: translate(-5%, -3%);
+  }
+  75% {
+    border-radius: 30% 40% 30% 40%;
+    transform: translate(3%, -3%);
+  }
+  100% {
+    border-radius: 40% 30% 40% 30%;
+    transform: translate(3%, 5%);
   }
 }
