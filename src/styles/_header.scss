@@ -7,6 +7,7 @@
   grid-template-columns: repeat(3, 1fr);
   color: var(--clr-gray-900);
   background-color: var(--clr-primary-500);
+  z-index: 9;
   isolation: isolate;
 }
 
@@ -65,7 +66,6 @@
   position: absolute;
   flex-direction: column;
   width: var(--dropdown-menu-width);
-  z-index: 1;
   background-color: var(--clr-primary-300);
 }
 
