@@ -229,16 +229,3 @@
     transform: translate(3%, 5%);
   }
 }
-
-.project-types-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-items: center;
-  gap: var(--size-600);
-}
-
-@media (min-width: breakpoint("md")) {
-  .project-types-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}

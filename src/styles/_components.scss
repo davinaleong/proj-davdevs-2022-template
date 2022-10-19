@@ -1,0 +1,58 @@
+.project-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: var(--size-600);
+}
+
+@media (min-width: breakpoint("md")) {
+  .project-types-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card-carousel {
+  display: grid;
+  gap: var(--size-200);
+  max-width: 100vw;
+  padding-inline: var(--size-200);
+}
+
+.card-carousel:not(:has(:nth-child(3))) {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.card-carousel:has(:nth-child(3)) {
+  grid-auto-flow: column;
+  grid-auto-columns: 50%;
+  overflow-x: scroll;
+}
+
+@media (min-width: breakpoint("md")) {
+  .card-carousel:has(:nth-child(3)) {
+    grid-auto-columns: calc(100% / 3);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: box-shadow(400);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:where(:hover) {
+  background-color: var(--clr-accent-2-500);
+}
+
+.card-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-200);
+}

@@ -425,8 +425,8 @@ $decorations: (
   "dashed": dashed,
 );
 
-@function deocration($deocration) {
-  $value: map-get($deocrations, $deocration);
+@function decoration($decoration) {
+  $value: map-get($decorations, $decoration);
   @if $value {
     @return $value;
   } @else {

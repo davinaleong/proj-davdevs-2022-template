@@ -226,17 +226,17 @@ $ff-secondary: family("secondary");
 $ff-monospace: family("monospace");
 
 // D.3. Font Sizes
-$fsize-base: size("base");
-$fsize-100: size(100);
-$fsize-200: size(200);
-$fsize-300: size(300);
-$fsize-400: size(400);
-$fsize-500: size(500);
-$fsize-600: size(600);
-$fsize-700: size(700);
-$fsize-800: size(800);
-$fsize-900: size(900);
-$fsize-1000: size(1000);
+$fsize-base: fsize("base");
+$fsize-100: fsize(100);
+$fsize-200: fsize(200);
+$fsize-300: fsize(300);
+$fsize-400: fsize(400);
+$fsize-500: fsize(500);
+$fsize-600: fsize(600);
+$fsize-700: fsize(700);
+$fsize-800: fsize(800);
+$fsize-900: fsize(900);
+$fsize-1000: fsize(1000);
 
 // D.4. Font Weights
 $fw-thin: weight("thin");
