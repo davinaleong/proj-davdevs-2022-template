@@ -184,23 +184,23 @@
 
 @keyframes hero-icon-before {
   0% {
-    border-radius: 30% 50% 5% 50%;
+    border-radius: 30% 50% 30% 50%;
     transform: translate(-3%, -3%);
   }
   25% {
-    border-radius: 50% 20% 50% 10%;
+    border-radius: 50% 30% 50% 30%;
     transform: translate(5%, -3%);
   }
   50% {
-    border-radius: 5% 50% 30% 50%;
+    border-radius: 30% 50% 30% 50%;
     transform: translate(5%, 5%);
   }
   75% {
-    border-radius: 50% 10% 50% 20%;
+    border-radius: 50% 30% 50% 30%;
     transform: translate(-3%, 3%);
   }
   100% {
-    border-radius: 30% 50% 5% 50%;
+    border-radius: 30% 50% 30% 50%;
     transform: translate(-3%, -3%);
   }
 }
