@@ -155,7 +155,7 @@
     }
 }
 
-@each $key, $value in $sizes {
+@each $key, $value in $fsizes {
     .fsize-#{$key} {
         font-size: $value;
     }

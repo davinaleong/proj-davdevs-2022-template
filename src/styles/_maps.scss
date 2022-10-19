@@ -230,6 +230,24 @@ $colors: (
     800: #37474f,
     900: #263238,
   ),
+  "html": (
+    400: #E54C21
+  ),
+  "css": (
+    400: #2465F1
+  ),
+  "javascript": (
+    400: #FFEC3A
+  ),
+  "bootstrap": (
+    400: #712CF9
+  ),
+  "react": (
+    400: #5ED3F3
+  ),
+  "laravel": (
+    400: #FF2C1F
+  )
 );
 
 @function color($color, $tint) {
@@ -266,15 +284,16 @@ $families: (
 // C.3. Font Sizes
 $fsizes: (
   base: 16px,
-  100: clamp(0.7rem, 1rem + 1vw, 0.8rem),
-  200: clamp(0.8rem, 1rem + 1vw, 0.9rem),
-  300: clamp(0.9rem, 1rem + 1vw, 1rem),
-  400: clamp(1rem, 1rem + 1vw, 1.25rem),
-  500: clamp(1.25rem, 1rem + 1vw, 1.5rem),
-  600: clamp(1.5rem, 1rem + 1vw, 1.75rem),
-  700: clamp(1.5rem, 1rem + 1vw, 2rem),
-  800: clamp(3rem, 1rem + 1vw, 4rem),
-  900: clamp(4rem, 1rem + 1vw, 5rem),
+  100: #{clamp(0.7rem, 1rem + 1vw, 0.8rem)},
+  200: #{clamp(0.8rem, 1rem + 1vw, 0.9rem)},
+  300: #{clamp(0.9rem, 1rem + 1vw, 1rem)},
+  400: #{clamp(1rem, 1rem + 1vw, 1.25rem)},
+  500: #{clamp(1.25rem, 1rem + 1vw, 1.5rem)},
+  600: #{clamp(1.5rem, 1rem + 1vw, 1.75rem)},
+  700: #{clamp(1.5rem, 1rem + 1vw, 2rem)},
+  800: #{clamp(3rem, 1rem + 3vw, 4rem)},
+  900: #{clamp(4rem, 1rem + 5vw, 8rem)},
+  1000: #{clamp(6rem, 1rem + 7vw, 10rem)},
 );
 
 @function fsize($fsize) {

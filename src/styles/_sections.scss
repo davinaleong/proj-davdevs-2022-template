@@ -227,3 +227,9 @@
     transform: translate(3%, 5%);
   }
 }
+
+.project-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}

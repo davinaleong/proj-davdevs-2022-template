@@ -58,6 +58,14 @@
   --clr-gray-700: #{$clr-gray-700};
   --clr-gray-800: #{$clr-gray-800};
   --clr-gray-900: #{$clr-gray-900};
+  --clr-gray-900: #{$clr-gray-900};
+
+  --clr-html-400: #{$clr-html-400};
+  --clr-css-400: #{$clr-css-400};
+  --clr-javascript-400: #{$clr-javascript-400};
+  --clr-bootstrap-400: #{$clr-bootstrap-400};
+  --clr-react-400: #{$clr-react-400};
+  --clr-laravel-400: #{$clr-laravel-400};
 
   --fsize-100: #{$fsize-100};
   --fsize-200: #{$fsize-200};
@@ -68,6 +76,7 @@
   --fsize-700: #{$fsize-700};
   --fsize-800: #{$fsize-800};
   --fsize-900: #{$fsize-900};
+  --fsize-1000: #{$fsize-1000};
 
   --ff-primary: #{$ff-primary};
   --ff-secondary: #{$ff-secondary};

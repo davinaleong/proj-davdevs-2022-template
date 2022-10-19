@@ -213,6 +213,13 @@ $clr-blue-gray-700: color("blue-gray", 700);
 $clr-blue-gray-800: color("blue-gray", 800);
 $clr-blue-gray-900: color("blue-gray", 900);
 
+$clr-html-400: color("html", 400);
+$clr-css-400: color("css", 400);
+$clr-javascript-400: color("javascript", 400);
+$clr-bootstrap-400: color("bootstrap", 400);
+$clr-react-400: color("react", 400);
+$clr-laravel-400: color("laravel", 400);
+
 // D.2. Font Families
 $ff-primary: family("primary");
 $ff-secondary: family("secondary");
@@ -229,6 +236,7 @@ $fsize-600: size(600);
 $fsize-700: size(700);
 $fsize-800: size(800);
 $fsize-900: size(900);
+$fsize-1000: size(1000);
 
 // D.4. Font Weights
 $fw-thin: weight("thin");
