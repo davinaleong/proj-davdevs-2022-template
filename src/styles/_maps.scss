@@ -231,23 +231,23 @@ $colors: (
     900: #263238,
   ),
   "html": (
-    400: #E54C21
+    400: #e54c21,
   ),
   "css": (
-    400: #2465F1
+    400: #2465f1,
   ),
   "javascript": (
-    400: #FFEC3A
+    400: #ffec3a,
   ),
   "bootstrap": (
-    400: #712CF9
+    400: #712cf9,
   ),
   "react": (
-    400: #5ED3F3
+    400: #5ed3f3,
   ),
   "laravel": (
-    400: #FF2C1F
-  )
+    400: #ff2c1f,
+  ),
 );
 
 @function color($color, $tint) {
@@ -606,6 +606,24 @@ $line-heights: (
 
 @function line-height($line-height) {
   $value: map-get($line-heights, $line-height);
+  @if $value {
+    @return $value;
+  } @else {
+    @return "";
+  }
+}
+
+// C.15. Breakpoints
+$breakpoints: (
+  "sm": 36em,
+  "md": 48em,
+  "lg": 62em,
+  "xl": 75em,
+  "xxl": 87.5em,
+);
+
+@function breakpoint($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
   @if $value {
     @return $value;
   } @else {
