@@ -1,0 +1,10 @@
+.form {
+    display: grid;
+    gap: var(--size-400);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-100);
+}
