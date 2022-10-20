@@ -101,6 +101,14 @@
   gap: var(--section-inner-grid-gap);
 }
 
+.section-inner-hero {
+  --section-inner-min-height: 50vh;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-height: 30vh;
+}
+
 .section-inner-landing-hero {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -109,7 +117,6 @@
       var(--header-height)
   );
 }
-
 .section-inner-landing-hero__content-cell {
   display: flex;
   align-items: center;
@@ -118,13 +125,28 @@
   text-align: center;
 }
 
-.section-inner-landing-hero__icon-cell {
+.section-inner-hero__content-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section-inner-hero__icon-cell {
   display: none;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 @media (min-width: 48em) {
+  .section-inner-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
   .section-inner-landing-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -133,18 +155,20 @@
 
   .section-inner-landing-hero__content-cell {
     align-items: start;
+    text-align: left;
   }
 
-  .section-inner-landing-hero__icon-cell {
+  .section-inner-hero__icon-cell {
     display: flex;
   }
 }
 
-.section-inner-landing-hero__icon-cell__icon-container {
+.section-inner-hero__icon-cell__icon-container {
   position: relative;
+  isolation: isolate;
 }
 
-.section-inner-landing-hero__icon-cell__icon-container::before {
+.section-inner-hero__icon-cell__icon-container::before {
   content: "";
   display: block;
   position: absolute;
@@ -161,7 +185,7 @@
   animation-iteration-count: infinite;
 }
 
-.section-inner-landing-hero__icon-cell__icon-container::after {
+.section-inner-hero__icon-cell__icon-container::after {
   content: "";
   display: block;
   position: absolute;
@@ -177,10 +201,13 @@
   animation-iteration-count: infinite;
 }
 
-.section-inner-landing-hero__icon-cell__icon-container__icon {
+.section-inner-hero__icon-cell__icon-container__icon {
   --hero-icon-size: 10rem;
+  --hero-icon-fsize: 10rem;
   width: var(--hero-icon-size);
   height: var(--hero-icon-size);
+  font-size: var(--hero-icon-fsize);
+  z-index: 2;
   position: relative;
 }
 

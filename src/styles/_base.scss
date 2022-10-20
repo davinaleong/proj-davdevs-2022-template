@@ -119,7 +119,7 @@
   --r-size-900: #{r-size(900)};
   --r-size-1000: #{r-size(1000)};
 
-  --header-height: 74px;
+  --header-height: 62px;
   --section-decoration-height: 3rem;
 }
 
@@ -133,16 +133,16 @@ Top Button: 8
 */
 
 // Setup
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 body {
   font-size: var(--fsize-400);
   font-family: var(--ff-primary);
   font-weight: var(--fw-medium);
-  color: var(--clr-gray-50);
-  background-color: var(--clr-gray-900);
+  // color: var(--clr-gray-50);
+  // background-color: var(--clr-gray-900);
 }
 
 :focus {
