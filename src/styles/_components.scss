@@ -108,3 +108,15 @@
     gap: var(--size-800);
   }
 }
+
+.timeline-card {
+  --timeline-card-clr: var(--clr-gray-900);
+  --timeline-card-clr-bg: var(--clr-primary-300);
+
+  color: var(--timeline-card-clr);
+  background-color: var(--timeline-card-clr-bg);
+  text-align: center;
+  padding: var(--size-200);
+  border-radius: r-border-radius(50);
+  box-shadow: box-shadow(400);
+}
