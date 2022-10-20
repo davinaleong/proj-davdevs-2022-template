@@ -279,8 +279,6 @@ sup,
 .btn-accent {
   --btn-padding: var(--r-size-100);
   --btn-fsize: var(--fsize-300);
-  --btn-flex-direction: column;
-  --btn-gap: 0;
 
   --btn-clr: var(--clr-gray-50);
   --btn-clr-bg: var(--clr-accent-1-500);
@@ -292,6 +290,9 @@ sup,
 }
 
 .btn-top {
+  --btn-flex-direction: column;
+  --btn-gap: 0;
+
   position: fixed;
   right: var(--size-200);
   bottom: var(--size-200);
