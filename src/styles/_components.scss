@@ -109,6 +109,29 @@
   }
 }
 
+.timeline-carousel {
+  display: grid;
+  gap: var(--size-200);
+  max-width: 100vw;
+  padding-inline: var(--size-200);
+}
+
+.timeline-carousel:not(:has(:nth-child(3))) {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.timeline-carousel:has(:nth-child(3)) {
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: scroll;
+}
+
+@media (min-width: breakpoint("md")) {
+  .timeline-carousel:has(:nth-child(3)) {
+    grid-auto-columns: calc(100% / 3);
+  }
+}
+
 .timeline-card {
   --timeline-card-clr: var(--clr-gray-900);
   --timeline-card-clr-bg: var(--clr-primary-300);
