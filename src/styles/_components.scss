@@ -82,3 +82,27 @@
     text-align: left;
   }
 }
+
+.additional-content-grid {
+  display: grid;
+  gap: var(--size-400);
+}
+
+.additional-content-cell {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--size-200);
+}
+
+.additional-content-cell__image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+@media (min-width: breakpoint("md")) {
+  .additional-content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-800);
+  }
+}

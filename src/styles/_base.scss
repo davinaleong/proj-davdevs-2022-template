@@ -189,6 +189,24 @@ sup,
   margin-inline: size("auto");
 }
 
+a,
+a:where(:active, :visited) {
+  --clr-link: var(--clr-gray-50);
+  --clr-link-hover: var(--clr-gray-100);
+
+  color: var(--clr-link);
+  transition: color 0.3s ease-in-out;
+}
+
+a:where(:hover) {
+  color: var(--clr-link-hover);
+}
+
+a.link-accent {
+  --clr-link: var(--clr-accent-1-500);
+  --clr-link-hover: var(--clr-accent-2-500);
+}
+
 // Buttons
 .btn {
   --btn-padding: var(--size-50);
