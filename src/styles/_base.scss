@@ -226,7 +226,7 @@ a.link-accent {
   --btn-clr-hover-bg: var(--clr-gray-800);
   --btn-clr-hover-border: var(--clr-gray-800);
 
-  display: flex;
+  display: inline-flex;
   flex-direction: var(--btn-flex-direction);
   align-items: var(--btn-align-items);
   justify-content: var(--btn-justify-content);
