@@ -44,12 +44,27 @@
   transition: all 0.3s ease-in-out;
   position: relative;
   isolation: isolate;
+  background-color: var(--clr-gray-700);
+}
+
+.card-featured {
+  background-color: var(--clr-lime-800);
+}
+
+.card:where(:hover) {
+  background-color: var(--clr-accent-2-500);
 }
 
 .card-corner {
   padding: var(--r-size-50);
+  background-color: var(--clr-gray-700);
+  transition: all 0.3s ease-in-out;
   position: absolute;
   z-index: 1;
+}
+
+.card:where(:hover) .card-corner {
+  background-color: var(--clr-accent-2-500);
 }
 
 .card-corner-top-left {
@@ -87,6 +102,10 @@
 .card-image {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.card:where(:hover) .card-image {
+  opacity: 0.8;
 }
 
 .card-body {
