@@ -38,8 +38,46 @@
   display: flex;
   flex-direction: column;
   box-shadow: box-shadow(400);
+  border-radius: var(--r-size-50);
+  overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  isolation: isolate;
+}
+
+.card-corner {
+  padding: var(--r-size-50);
+  position: absolute;
+  z-index: 1;
+}
+
+.card-corner-top-left {
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: auto;
+}
+
+.card-corner-top-right {
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 0;
+}
+
+.card-corner-bottom-left {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+.card-corner-bottom-right {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
 }
 
 .card:where(:hover) {
