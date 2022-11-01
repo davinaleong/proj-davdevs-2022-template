@@ -181,3 +181,17 @@
   border-radius: r-border-radius(50);
   box-shadow: box-shadow(400);
 }
+
+.card-grid {
+  --card-grid-cols: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--card-grid-cols, 1), 1fr);
+  gap: var(--r-size-200);
+}
+
+@media (min-width: breakpoint("md")) {
+  .card-grid {
+    --card-grid-cols: 3;
+  }
+}
