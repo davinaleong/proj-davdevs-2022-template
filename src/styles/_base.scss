@@ -191,8 +191,8 @@ sup,
 
 a,
 a:where(:active, :visited) {
-  --clr-link: var(--clr-gray-50);
-  --clr-link-hover: var(--clr-gray-100);
+  --clr-link: var(--clr-accent-1-500);
+  --clr-link-hover: var(--clr-accent-2-500);
 
   color: var(--clr-link);
   transition: color 0.3s ease-in-out;
