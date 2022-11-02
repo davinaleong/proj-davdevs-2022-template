@@ -248,3 +248,22 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
+
+@media (min-width: breakpoint("md")) {
+  .project-item-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .project-item-cell-title {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    place-items: center start;
+    text-align: left;
+  }
+  
+  .project-item-cell-image {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+}
