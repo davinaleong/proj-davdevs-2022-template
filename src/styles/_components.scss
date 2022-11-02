@@ -45,6 +45,7 @@
   position: relative;
   isolation: isolate;
   background-color: var(--clr-gray-700);
+  text-decoration: none;
 }
 
 .card-featured {
@@ -96,6 +97,7 @@
 }
 
 .card:where(:hover) {
+  color: var(--clr-gray-50);
   background-color: var(--clr-accent-2-500);
 }
 
@@ -213,4 +215,36 @@
   .card-grid {
     --card-grid-cols: 3;
   }
+}
+
+.project-item-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, max-content);
+  gap: var(--r-size-400);
+}
+
+.project-item-cell {
+  display: grid;
+}
+
+.project-item-cell-title {
+  place-items: center center;
+  text-align: center;
+  grid-row: 2;
+}
+
+.project-item-cell-image {
+  place-items: center center;
+}
+
+.project-item-category {
+  display: flex;
+  align-items: center;
+  gap: var(--r-size-100);
+}
+
+.project-item-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
