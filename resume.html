@@ -16,9 +16,17 @@
     ></script>
     <script defer type="module" src="./src/scripts/main.js"></script>
   </head>
-  <body id="top" class="clr-gray-50 bg-primary-200">
+  <body id="top" class="resume | clr-gray-900 bg-white">
     <main class="content">
       <header class="main-header" data-element="main-header">
+        <div class="alert | ta-center">
+          <i class="alert__close fa-solid fa-circle-xmark fa-lg"></i>
+
+          Press <code>CTRL+P</code> for
+          <i class="fa-brands fa-windows"></i> Windows or <code>CMD+P</code> for
+          <i class="fa-brands fa-apple"></i> Mac to
+          <i class="fa-solid fa-print"></i> Print.
+        </div>
         <nav class="main-nav" data-element="main-nav-mobile">
           <ul class="nav-list" role="list">
             <li class="nav-list-item">
@@ -202,139 +210,69 @@
       <div class="main-content">
         <section
           id="home"
-          class="section section-primary-200 section-primary-200-to-gray-800 clr-gray-800"
+          class="section section-primary-200 section-primary-200-to-white"
         >
-          <div class="section-inner container section-inner-hero">
-            <div class="section-inner-hero__content-cell">
-              <h1 class="ff-secondary fsize-700 fw-medium">About</h1>
+          <div
+            class="section-inner container section-inner-hero-resume container"
+          >
+            <div class="section-inner-hero-resume__content-cell">
+              <img
+                src="./images/profile-pic.png"
+                alt=""
+                class="section-inner-hero-resume__content-cell__image"
+              />
             </div>
-            <div class="section-inner-hero__icon-cell">
-              <div class="section-inner-hero__icon-cell__icon-container">
-                <i
-                  class="fa-duotone fa-question section-inner-hero__icon-cell__icon-container__icon clr-yellow-500"
-                ></i>
-              </div>
+            <div class="section-inner-hero-resume__icon-cell">
+              <h1 class="ff-secondary fsize-900 fw-medium">Davina Leong</h1>
+              <p class="fsize-600 fw-medium">Web Developer, 7 years</p>
             </div>
-          </div>
-        </section>
+            <div class="section-inner-hero-resume__content-cell">
+              <ul class="fsize-300" role="list">
+                <li>
+                  <a href="mailto:leong.shi.yun@gmail.com" class="link"
+                    ><i class="fa-duotone fa-envelope"></i>
+                    leong.shi.yun@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:6596393752" class="link"
+                    ><i class="fa-duotone fa-phone"></i> +65 9369 3752</a
+                  >
+                </li>
+                <li class="m-b-200">
+                  <span class="link"
+                    ><i class="fa-duotone fa-location-dot"></i> West,
+                    Singapore</span
+                  >
+                </li>
 
-        <section
-          id="all-skills"
-          class="section section-gray-800 section-gray-800-to-gray-900 section-reverse"
-        >
-          <div class="section-inner container">
-            <h2
-              class="ff-secondary fsize-700 fw-medium clr-yellow-500 ta-center m-b-600"
-            >
-              All Skills
-            </h2>
-
-            <div class="skills-grid m-b-600" style="--skills-cell-count: 4">
-              <div class="skills-cell">
-                <h3 class="fsize-600 fw-medium clr-yellow-300">Frontend</h3>
-
-                <ul class="list-style-none">
-                  <li>HTML/HTML5</li>
-                  <li>CSS/CSS3</li>
-                  <li>JavaScript</li>
-                  <li>jQuery</li>
-                  <li>SASS</li>
-                  <li>Bootstrap</li>
-                  <li>Tailwind</li>
-                  <li>Material UI</li>
-                  <li>React</li>
-                  <li>JSX</li>
-                  <li>GatsbyJS</li>
-                  <li>Astro SSG</li>
-                  <li>Responsive Web Design</li>
-                </ul>
-              </div>
-
-              <div class="skills-cell">
-                <h3 class="fsize-600 fw-medium clr-yellow-300">Backend</h3>
-
-                <ul class="list-style-none">
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>WordPress/WooCommerce</li>
-                  <li>NodeJS</li>
-                  <li>PHPUnit</li>
-                  <li>Jest</li>
-                  <li>MySQL</li>
-                  <li>MongoDB</li>
-                  <li>REST API</li>
-                  <li>Sequelize</li>
-                  <li>Express</li>
-                  <li>GrapQL</li>
-                  <li>Vite</li>
-                </ul>
-              </div>
-
-              <div class="skills-cell">
-                <h3 class="fsize-600 fw-medium clr-yellow-300">DevOps</h3>
-
-                <ul class="list-style-none">
-                  <li>Netlify</li>
-                  <li>Heroku</li>
-                  <li>Amazon AWS</li>
-                  <li>CPanel</li>
-                  <li>Docker</li>
-                  <li>CI/CD</li>
-                </ul>
-              </div>
-
-              <div class="skills-cell">
-                <h3 class="fsize-600 fw-medium clr-yellow-300">Tools</h3>
-
-                <ul class="list-style-none">
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>BitBucket</li>
-                  <li>Figma</li>
-                  <li>Adobe XD</li>
-                  <li>Photoshop</li>
-                  <li>Illustrator</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="timeline" class="section section-gray-900 section-gray-900-to-gray-900">
-          <div class="section-inner">
-            <div class="container">
-              <h2 class="ff-secondary fsize-700 fw-medium clr-yellow-500 ta-center m-b-600">Timeline</h2>
-            </div>
-
-            <div class="bg-gray-800 p-y-400">
-              <div class="timeline-carousel p-b-200">
-                <div class="timeline-card">
-                  <p class="fsize-500 m-b-200">YYYY - YYYY</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni eligendi corrupti voluptate reiciendis? Dicta ut quidem natus minima aliquam?</p>
-                </div>
-  
-                <div class="timeline-card">
-                  <p class="fsize-500 m-b-200">YYYY - YYYY</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni eligendi corrupti voluptate reiciendis? Dicta ut quidem natus minima aliquam?</p>
-                </div>
-  
-                <div class="timeline-card">
-                  <p class="fsize-500 m-b-200">YYYY - YYYY</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni eligendi corrupti voluptate reiciendis? Dicta ut quidem natus minima aliquam?</p>
-                </div>
-  
-                <div class="timeline-card">
-                  <p class="fsize-500 m-b-200">YYYY - YYYY</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni eligendi corrupti voluptate reiciendis? Dicta ut quidem natus minima aliquam?</p>
-                </div>
-  
-                <div class="timeline-card">
-                  <p class="fsize-500 m-b-200">YYYY - YYYY</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni eligendi corrupti voluptate reiciendis? Dicta ut quidem natus minima aliquam?</p>
-                </div>
-              </div>
-
-              <p class="ta-center fsize-300 m-t-200"><em>Scroll left and right to see more.</em></p>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/davina-leong-s9115675g/"
+                    target="_blank"
+                    class="link"
+                    ><i class="fa-brands fa-linkedin"></i>
+                    linkedin.com/in/davina</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/davinaleong"
+                    target="_blank"
+                    class="link"
+                    ><i class="fa-brands fa-github"></i>
+                    github.com/davinaleong</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://dev.to/davinaleong"
+                    target="_blank"
+                    class="link"
+                    ><i class="fa-brands fa-dev"></i> dev.to/davinaleong</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
         </section>

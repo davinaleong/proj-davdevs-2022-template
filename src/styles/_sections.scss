@@ -20,8 +20,8 @@
   --section-clr-bg: var(--clr-gray-800);
 }
 
-.section-primary-300 {
-  --section-clr-bg: var(--clr-primary-300);
+.section-primary-200 {
+  --section-clr-bg: var(--clr-primary-200);
 }
 
 .section-white {
@@ -58,9 +58,9 @@
   --clr-section-decoration-end: var(--clr-gray-800);
 }
 
-.section.section-gray-900-to-primary-300::after {
+.section.section-gray-900-to-primary-200::after {
   --clr-section-decoration-start: var(--clr-gray-900);
-  --clr-section-decoration-end: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-primary-200);
 }
 
 .section.section-gray-900-to-white::after {
@@ -78,9 +78,9 @@
   --clr-section-decoration-end: var(--clr-gray-900);
 }
 
-.section.section-gray-800-to-primary-300::after {
+.section.section-gray-800-to-primary-200::after {
   --clr-section-decoration-start: var(--clr-gray-800);
-  --clr-section-decoration-end: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-primary-200);
 }
 
 .section.section-gray-800-to-white::after {
@@ -88,29 +88,29 @@
   --clr-section-decoration-end: var(--clr-white);
 }
 
-.section.section-primary-300-to-primary-300::after {
-  --clr-section-decoration-start: var(--clr-primary-300);
-  --clr-section-decoration-end: var(--clr-primary-300);
+.section.section-primary-200-to-primary-200::after {
+  --clr-section-decoration-start: var(--clr-primary-200);
+  --clr-section-decoration-end: var(--clr-primary-200);
 }
 
-.section.section-primary-300-to-gray-900::after {
-  --clr-section-decoration-start: var(--clr-primary-300);
+.section.section-primary-200-to-gray-900::after {
+  --clr-section-decoration-start: var(--clr-primary-200);
   --clr-section-decoration-end: var(--clr-gray-900);
 }
 
-.section.section-primary-300-to-gray-800::after {
-  --clr-section-decoration-start: var(--clr-primary-300);
+.section.section-primary-200-to-gray-800::after {
+  --clr-section-decoration-start: var(--clr-primary-200);
   --clr-section-decoration-end: var(--clr-gray-800);
 }
 
-.section.section-primary-300-to-white::after {
-  --clr-section-decoration-start: var(--clr-primary-300);
+.section.section-primary-200-to-white::after {
+  --clr-section-decoration-start: var(--clr-primary-200);
   --clr-section-decoration-end: var(--clr-white);
 }
 
-.section.section-white-to-primary-300::after {
+.section.section-white-to-primary-200::after {
   --clr-section-decoration-start: var(--clr-white);
-  --clr-section-decoration-end: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-primary-200);
 }
 
 .section.section-white-to-gray-900::after {

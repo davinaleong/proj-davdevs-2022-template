@@ -4,6 +4,9 @@
 :root,
 ::after,
 ::before {
+  --clr-black: #{$clr-black};
+  --clr-white: #{$clr-white};
+
   --clr-primary-50: #{$clr-yellow-50};
   --clr-primary-100: #{$clr-yellow-100};
   --clr-primary-200: #{$clr-yellow-200};
@@ -120,6 +123,7 @@
   --r-size-1000: #{r-size(1000)};
 
   --header-height: 62px;
+  --alert-height: 30px;
   --section-decoration-height: 3rem;
 }
 
@@ -141,8 +145,6 @@ body {
   font-size: var(--fsize-400);
   font-family: var(--ff-primary);
   font-weight: var(--fw-medium);
-  // color: var(--clr-gray-50);
-  // background-color: var(--clr-gray-900);
 }
 
 :focus {
@@ -258,8 +260,8 @@ a.link-accent {
   --btn-clr-border: var(--clr-primary-500);
 
   --btn-clr-hover: var(--clr-accent-2-500);
-  --btn-clr-hover-bg: var(--clr-primary-300);
-  --btn-clr-hover-border: var(--clr-primary-300);
+  --btn-clr-hover-bg: var(--clr-primary-200);
+  --btn-clr-hover-border: var(--clr-primary-200);
 
   height: 100%;
 }
@@ -272,12 +274,14 @@ a.link-accent {
   --btn-gap: var(--size-10);
 
   --btn-clr: var(--clr-gray-900);
-  --btn-clr-bg: var(--clr-primary-300);
-  --btn-clr-border: var(--clr-primary-300);
+  --btn-clr-bg: var(--clr-primary-200);
+  --btn-clr-border: var(--clr-primary-200);
 
   --btn-clr-hover: var(--clr-accent-2-500);
   --btn-clr-hover-bg: var(--clr-primary-100);
   --btn-clr-hover-border: var(--clr-primary-100);
+
+  width: 100%;
 }
 
 .btn-footer {
