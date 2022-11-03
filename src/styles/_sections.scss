@@ -24,6 +24,10 @@
   --section-clr-bg: var(--clr-primary-300);
 }
 
+.section-white {
+  --section-clr-bg: var(--clr-white);
+}
+
 .section::after {
   --clr-section-decoration-start: var(--clr-gray-400);
   --clr-section-decoration-end: var(--clr-gray-500);
@@ -59,6 +63,11 @@
   --clr-section-decoration-end: var(--clr-primary-300);
 }
 
+.section.section-gray-900-to-white::after {
+  --clr-section-decoration-start: var(--clr-gray-900);
+  --clr-section-decoration-end: var(--clr-white);
+}
+
 .section.section-gray-800-to-gray-800::after {
   --clr-section-decoration-start: var(--clr-gray-800);
   --clr-section-decoration-end: var(--clr-gray-800);
@@ -74,6 +83,11 @@
   --clr-section-decoration-end: var(--clr-primary-300);
 }
 
+.section.section-gray-800-to-white::after {
+  --clr-section-decoration-start: var(--clr-gray-800);
+  --clr-section-decoration-end: var(--clr-white);
+}
+
 .section.section-primary-300-to-primary-300::after {
   --clr-section-decoration-start: var(--clr-primary-300);
   --clr-section-decoration-end: var(--clr-primary-300);
@@ -87,6 +101,31 @@
 .section.section-primary-300-to-gray-800::after {
   --clr-section-decoration-start: var(--clr-primary-300);
   --clr-section-decoration-end: var(--clr-gray-800);
+}
+
+.section.section-primary-300-to-white::after {
+  --clr-section-decoration-start: var(--clr-primary-300);
+  --clr-section-decoration-end: var(--clr-white);
+}
+
+.section.section-white-to-primary-300::after {
+  --clr-section-decoration-start: var(--clr-white);
+  --clr-section-decoration-end: var(--clr-primary-300);
+}
+
+.section.section-white-to-gray-900::after {
+  --clr-section-decoration-start: var(--clr-white);
+  --clr-section-decoration-end: var(--clr-gray-900);
+}
+
+.section.section-white-to-gray-800::after {
+  --clr-section-decoration-start: var(--clr-white);
+  --clr-section-decoration-end: var(--clr-gray-800);
+}
+
+.section.section-white-to-white::after {
+  --clr-section-decoration-start: var(--clr-white);
+  --clr-section-decoration-end: var(--clr-white);
 }
 
 .section.section-reverse::after {
