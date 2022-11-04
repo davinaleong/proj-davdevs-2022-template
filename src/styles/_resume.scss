@@ -41,6 +41,19 @@
   color: var(--clr-accent-2-500);
 }
 
+.divider {
+  width: 5em;
+  height: 1px;
+  background-color: var(--clr-gray-900);
+  margin-inline: auto;
+  margin-block: var(--r-size-200);
+}
+
+.restrict-width {
+    max-width: 75ch;
+    margin-inline: auto;
+}
+
 .resume {
   .alert {
     grid-column: 1 / -1;
@@ -63,6 +76,10 @@
 
   .section-inner-hero__content-cell__image {
     max-width: 10em;
+  }
+
+  .section-inner {
+    gap: 0;
   }
 }
 
@@ -89,9 +106,9 @@
     }
 
     &:has(.main-header[data-expanded="true"]) {
-        .content {
-            padding-top: 0;
-        }
+      .content {
+        padding-top: 0;
+      }
     }
   }
 }

@@ -132,6 +132,10 @@
   --section-decoration-direction: to bottom left;
 }
 
+.section.section-no-decoration::after {
+  display: none;
+}
+
 .section-inner {
   --section-inner-grid-gap: var(--size-400);
 
