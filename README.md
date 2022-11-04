@@ -2,7 +2,7 @@
 
 New template for my personal website.
 
-Demo link coming soon!
+Demo link can be found [here](https://davinaleong.github.io/proj-davdevs-2022-template-dist/)!
 
 ## Getting Started
 

@@ -36,6 +36,10 @@
 
   &__body {
     padding: var(--r-size-200);
+
+    p:not(:last-child) {
+      margin-bottom: var(--r-size-200);
+    }
   }
 
   &__footer {
@@ -44,13 +48,13 @@
 }
 
 [data-element="modal-close"] {
-    position: absolute;
-    top: var(--r-size-200);
-    right: var(--r-size-200);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  position: absolute;
+  top: var(--r-size-200);
+  right: var(--r-size-200);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 
-    &:where(:hover) {
-        color: var(--clr-accent-2-500);
-    }
+  &:where(:hover) {
+    color: var(--clr-accent-2-500);
+  }
 }
