@@ -53,7 +53,37 @@ const alertRemovedAttr = `data-alert-removed`
 const resumeBody = document.querySelector(`[data-element="body-resume"]`)
 const alertEl = document.querySelector(`[data-element="alert"]`)
 const alertCloseEl = document.querySelector(`[data-element="alert-close"]`)
-alertCloseEl.addEventListener(`click`, (e) => {
-  resumeBody.setAttribute(alertRemovedAttr, true)
-  alertEl.remove()
+if (alertEl) {
+  alertCloseEl.addEventListener(`click`, (e) => {
+    resumeBody.setAttribute(alertRemovedAttr, true)
+    alertEl.remove()
+  })
+}
+
+// Modal
+const openAttr = `data-open`
+const btnHeaderJokeMobileEl = document.querySelector(
+  `[data-element="btn-header-joke-mobile"]`
+)
+const btnHeaderJokeEl = document.querySelector(
+  `[data-element="btn-header-joke"]`
+)
+const modalJokesEl = document.querySelector(`[data-element="modal-jokes"]`)
+const modalCloseEl = document.querySelector(`[data-element="modal-close"]`)
+const btnModalCloseEl = document.querySelector(
+  `[data-element="btn-modal-close"]`
+)
+
+btnHeaderJokeMobileEl.addEventListener(`click`, (e) => {
+  modalJokesEl.setAttribute(openAttr, true)
+})
+btnHeaderJokeEl.addEventListener(`click`, (e) => {
+  modalJokesEl.setAttribute(openAttr, true)
+})
+
+modalCloseEl.addEventListener(`click`, (e) => {
+  modalJokesEl.removeAttribute(openAttr)
+})
+btnModalCloseEl.addEventListener(`click`, (e) => {
+  modalJokesEl.removeAttribute(openAttr)
 })
