@@ -50,8 +50,19 @@
 }
 
 .restrict-width {
-    max-width: 75ch;
-    margin-inline: auto;
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.resume-item {
+  display: grid;
+  grid-template-columns: 8ch auto;
+  grid-template-rows: repeat(2, max-content);
+  gap: var(--r-size-200);
+
+  &__description {
+    grid-column: 1 / -1;
+  }
 }
 
 .resume {
