@@ -24,79 +24,86 @@
     <main class="content">
       <header class="main-header" data-element="main-header">
         <div class="alert | ta-center" data-element="alert">
-          <i
-            class="alert__close fa-solid fa-xmark fa-lg"
-            data-element="alert-close"
-          ></i>
+          <div class="container">
+            <i
+              class="alert__close fa-solid fa-xmark fa-lg"
+              data-element="alert-close"
+            ></i>
 
-          Press <code>CTRL+P</code> for
-          <i class="fa-brands fa-windows"></i> Windows or <code>CMD+P</code> for
-          <i class="fa-brands fa-apple"></i> Mac to
-          <i class="fa-solid fa-print"></i> Print.
+            Press <code>CTRL+P</code> for
+            <i class="fa-brands fa-windows"></i> Windows or
+            <code>CMD+P</code> for <i class="fa-brands fa-apple"></i> Mac to
+            <i class="fa-solid fa-print"></i> Print.
+          </div>
         </div>
 
-        <nav class="main-nav" data-element="main-nav-mobile">
-          <ul class="nav-list" role="list">
-            <li class="nav-list-item">
-              <a
-                href="#"
-                class="btn btn-header"
-                data-element="btn-header-joke-mobile"
-              >
-                <i class="fa-duotone fa-face-laugh-beam"></i>
-              </a>
-            </li>
-            <li class="nav-list-item">
-              <a
-                href="#"
-                class="btn btn-header"
-                data-element="main-header-expand"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="main-header-content">
+          <nav class="main-nav" data-element="main-nav-mobile">
+            <ul class="nav-list" role="list">
+              <li class="nav-list-item">
+                <a
+                  href="#"
+                  class="btn btn-header"
+                  data-element="btn-header-joke-mobile"
+                >
+                  <i class="fa-duotone fa-face-laugh-beam"></i>
+                </a>
+              </li>
+              <li class="nav-list-item">
+                <a
+                  href="#"
+                  class="btn btn-header"
+                  data-element="main-header-expand"
+                >
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <a href="#" class="btn btn-header" data-element="main-header-close">
-          <i class="fa-solid fa-times"></i>
-        </a>
+          <a href="#" class="btn btn-header" data-element="main-header-close">
+            <i class="fa-solid fa-times"></i>
+          </a>
 
-        <nav class="main-nav" data-element="main-nav-left">
-          <ul class="nav-list" role="list">
-            <li class="nav-list-item">
-              <a href="./about.html" class="btn btn-header">About</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="btn btn-header">Portfolio</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav" data-element="main-nav-left">
+            <ul class="nav-list" role="list">
+              <li class="nav-list-item">
+                <a href="./about.html" class="btn btn-header">About</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./portfolio.html" class="btn btn-header">Portfolio</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav class="main-nav" data-element="main-nav-center">
-          <ul class="nav-list" role="list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="btn btn-header">
-                <div class="brand-line"></div>
-                <div class="ff-secondary fsize-500">D/D</div>
-                <div class="brand-line"></div>
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav" data-element="main-nav-center">
+            <ul class="nav-list" role="list">
+              <li class="nav-list-item">
+                <a href="./index.html" class="btn btn-header">
+                  <div class="brand-line"></div>
+                  <div class="ff-secondary fsize-500">D/D</div>
+                  <div class="brand-line"></div>
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav class="main-nav" data-element="main-nav-right">
-          <ul class="nav-list" role="list">
-            <li class="nav-list-item">
-              <a href="./resume.html" class="btn btn-header">Resume</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#" class="btn btn-header" data-element="btn-header-joke"
-                >Try Me!</a
-              >
-            </li>
-          </ul>
-        </nav>
+          <nav class="main-nav" data-element="main-nav-right">
+            <ul class="nav-list" role="list">
+              <li class="nav-list-item">
+                <a href="./resume.html" class="btn btn-header">Resume</a>
+              </li>
+              <li class="nav-list-item">
+                <a
+                  href="#"
+                  class="btn btn-header"
+                  data-element="btn-header-joke"
+                  >Try Me!</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <div class="main-content">
@@ -504,88 +511,97 @@
       </div>
 
       <footer class="main-footer">
-        <div class="main-footer-cell">
-          <h2 class="ff-secondary fw-regular">D/D</h2>
+        <div class="container">
+          <div class="main-footer-content">
+            <div class="main-footer-cell">
+              <h2 class="ff-secondary fw-regular">D/D</h2>
 
-          <nav class="main-footer-nav">
-            <ul
-              class="nav-list"
-              role="list"
-              data-element="main-footer-contact-nav"
-            >
-              <li class="nav-list-item">
-                <a href="mailto:leong.shi.yun@gmail.com" class="btn btn-footer">
-                  <i class="fa-duotone fa-envelope"></i> leong.shi.yun@gmail.com
-                </a>
-              </li>
-              <li class="nav-list-item">
-                <div class="btn btn-footer">
-                  <i class="fa-duotone fa-house"></i> West, Singapore
-                </div>
-              </li>
-            </ul>
-          </nav>
+              <nav class="main-footer-nav">
+                <ul
+                  class="nav-list"
+                  role="list"
+                  data-element="main-footer-contact-nav"
+                >
+                  <li class="nav-list-item">
+                    <a
+                      href="mailto:leong.shi.yun@gmail.com"
+                      class="btn btn-footer"
+                    >
+                      <i class="fa-duotone fa-envelope"></i>
+                      leong.shi.yun@gmail.com
+                    </a>
+                  </li>
+                  <li class="nav-list-item">
+                    <div class="btn btn-footer">
+                      <i class="fa-duotone fa-house"></i> West, Singapore
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- ./main-footer-cell -->
+
+            <div class="main-footer-cell">
+              <h2 class="ff-secondary fw-regular">Sitemap</h2>
+
+              <nav class="main-footer-nav">
+                <ul class="nav-list" role="list">
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">Home</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">About</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">Portfolio</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">Contact</a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">Try Me!</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- ./main-footer-cell -->
+
+            <div class="main-footer-cell">
+              <h2 class="ff-secondary fw-regular">Social</h2>
+
+              <nav class="main-footer-nav">
+                <ul class="nav-list" role="list">
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">
+                      <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">
+                      <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">
+                      <i class="fa-brands fa-dev"></i> DEV
+                    </a>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="#" class="btn btn-footer">
+                      <i class="fa-brands fa-jsfiddle"></i> JsFiddle
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="main-footer-divider"></div>
+
+          <p class="main-footer-copyright fsize-300 fs-italic ta-center">
+            dav/devs &copy; Davina Leong, 2022-2022
+          </p>
         </div>
-        <!-- ./main-footer-cell -->
-
-        <div class="main-footer-cell">
-          <h2 class="ff-secondary fw-regular">Sitemap</h2>
-
-          <nav class="main-footer-nav">
-            <ul class="nav-list" role="list">
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">Home</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">About</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">Portfolio</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">Contact</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">Try Me!</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- ./main-footer-cell -->
-
-        <div class="main-footer-cell">
-          <h2 class="ff-secondary fw-regular">Social</h2>
-
-          <nav class="main-footer-nav">
-            <ul class="nav-list" role="list">
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">
-                  <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">
-                  <i class="fa-brands fa-github"></i> GitHub
-                </a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">
-                  <i class="fa-brands fa-dev"></i> DEV
-                </a>
-              </li>
-              <li class="nav-list-item">
-                <a href="#" class="btn btn-footer">
-                  <i class="fa-brands fa-jsfiddle"></i> JsFiddle
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <!-- ./main-footer-cell -->
-        <div class="footer-divider"></div>
-        <p class="footer-copyright fsize-300 fs-italic ta-center">
-          dav/devs &copy; Davina Leong, 2022-2022
-        </p>
       </footer>
 
       <a href="#top" class="btn btn-accent btn-top">
