@@ -126,6 +126,12 @@
 
 @media (min-width: breakpoint("md")) {
   .resume {
+    &[data-alert-removed="true"] {
+      .content {
+        padding-top: var(--header-height);
+      }
+    }
+
     .section-inner-hero {
       //   grid-template-columns: 0.5fr 1.5fr 0.5fr;
       grid-template-columns: 0.25fr 1fr 0.75fr;
