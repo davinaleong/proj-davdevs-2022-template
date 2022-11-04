@@ -111,15 +111,17 @@
       grid-row: 2;
     }
 
-    .main-header-content[data-expanded="true"] {
-      grid-template-rows: repeat(3, max-content);
-
+    .main-header[data-expanded="true"] {
       .alert {
         display: none;
       }
+
+      .main-header-content {
+        grid-template-rows: repeat(3, max-content);
+      }
     }
 
-    &:has(.main-header-content[data-expanded="true"]) {
+    &:has(.main-header[data-expanded="true"]) {
       .content {
         padding-top: 0;
       }

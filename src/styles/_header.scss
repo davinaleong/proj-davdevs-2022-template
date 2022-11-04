@@ -116,9 +116,7 @@
     display: none;
   }
 
-  .main-header-content[data-expanded="true"] {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, max-content);
+  .main-header[data-expanded="true"] {
     position: fixed;
     z-index: 9;
     top: var(--size-200);
@@ -127,6 +125,11 @@
     height: calc(100vh - var(--size-400));
     overflow-y: auto;
     box-shadow: box-shadow(400);
+
+    .main-header-content {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, max-content);
+    }
 
     [data-element="main-header-close"] {
       display: flex;
