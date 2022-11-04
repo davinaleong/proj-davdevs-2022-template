@@ -116,7 +116,7 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(3, max-content);
     position: fixed;
-    z-index: 2;
+    z-index: 9;
     top: var(--size-200);
     left: var(--size-200);
     width: calc(100vw - var(--size-400));
