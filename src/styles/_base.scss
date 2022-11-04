@@ -178,6 +178,8 @@ sup,
 // Containers
 .content {
   padding-top: var(--header-height);
+  position: relative;
+  isolation: isolate;
 }
 
 .container-fluid {
@@ -211,13 +213,13 @@ a.link-accent {
 
 // Buttons
 .btn {
-  --btn-padding: var(--size-50);
+  --btn-padding: var(--r-size-50);
   --btn-box-shadow: #{box-shadow(400)};
-  --btn-border-radius: #{r-border-radius(50)};
+  --btn-border-radius: var(--r-size-50);
   --btn-flex-direction: row;
   --btn-align-items: center;
   --btn-justify-content: center;
-  --btn-gap: var(--size-50);
+  --btn-gap: var(--r-size-100);
   --btn-fsize: var(--fsize-400);
 
   --btn-clr: var(--clr-gray-800);
@@ -299,7 +301,7 @@ a.link-accent {
 }
 
 .btn-accent {
-  --btn-padding: var(--r-size-100);
+  --btn-padding: var(--r-size-100) var(--r-size-200);
   --btn-fsize: var(--fsize-300);
 
   --btn-clr: var(--clr-gray-50);
