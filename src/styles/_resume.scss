@@ -11,7 +11,6 @@
   background-color: var(--alert-clr-bg);
   grid-column: 1 / -1;
   position: relative;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
@@ -20,6 +19,7 @@
   top: 50%;
   right: var(--r-size-200);
   opacity: 0;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
