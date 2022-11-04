@@ -55,6 +55,7 @@ const alertEl = document.querySelector(`[data-element="alert"]`)
 const alertCloseEl = document.querySelector(`[data-element="alert-close"]`)
 if (alertEl) {
   alertCloseEl.addEventListener(`click`, (e) => {
+    e.preventDefault()
     resumeBody.setAttribute(alertRemovedAttr, true)
     alertEl.remove()
   })
@@ -75,15 +76,19 @@ const btnModalCloseEl = document.querySelector(
 )
 
 btnHeaderJokeMobileEl.addEventListener(`click`, (e) => {
+  e.preventDefault()
   modalJokesEl.setAttribute(openAttr, true)
 })
 btnHeaderJokeEl.addEventListener(`click`, (e) => {
+  e.preventDefault()
   modalJokesEl.setAttribute(openAttr, true)
 })
 
 modalCloseEl.addEventListener(`click`, (e) => {
+  e.preventDefault()
   modalJokesEl.removeAttribute(openAttr)
 })
 btnModalCloseEl.addEventListener(`click`, (e) => {
+  e.preventDefault()
   modalJokesEl.removeAttribute(openAttr)
 })
