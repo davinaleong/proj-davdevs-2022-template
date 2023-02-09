@@ -311,7 +311,7 @@
         Top
       </a>
 
-      <div class="modal" data-element="modal-jokes">
+      <div class="modal" data-element="modal-jokes" aria-expanded="false">
         <div class="modal-dialog | ta-center">
           <i class="fa-solid fa-xmark fsize-500" data-element="modal-close"></i>
 
@@ -338,6 +338,25 @@
               accusamus rem sequi dolorem est vitae corrupti! Dolorem sequi
               magni dolore.
             </p>
+          </div>
+
+          <div class="modal-dialog__footer">
+            <button
+              type="button"
+              class="btn btn-accent"
+              data-element="btn-modal-close"
+            >
+              Close <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" data-element="modal-image" aria-expanded="false">
+        <div class="modal-dialog | ta-center">
+          <i class="fa-solid fa-xmark fsize-500" data-element="modal-close"></i>
+          <div class="modal-dialog__body">
+            <img class="modal-dialog-image" src="./images/fem-projects.jpg" alt="">
           </div>
 
           <div class="modal-dialog__footer">

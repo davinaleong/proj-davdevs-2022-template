@@ -61,8 +61,26 @@ if (alertEl) {
   })
 }
 
-// Modal
-const openAttr = `data-open`
+// All Modals
+const ariaExpandedAttr = `aria-expanded`
+const modalEls = document.querySelectorAll('.modal')
+modalEls.forEach(modalEl => {
+  const modalCloseEl = modalEl.querySelector(`[data-element="modal-close"]`)
+  const btnModalCloseEl = modalEl.querySelector(
+    `[data-element="btn-modal-close"]`
+  )
+
+  modalCloseEl.addEventListener(`click`, (e) => {
+    e.preventDefault()
+    modalEl.setAttribute(ariaExpandedAttr, false)
+  })
+  btnModalCloseEl.addEventListener(`click`, (e) => {
+    e.preventDefault()
+    modalEl.setAttribute(ariaExpandedAttr, false)
+  })
+})
+
+// Jokes Modal
 const btnHeaderJokeMobileEl = document.querySelector(
   `[data-element="btn-header-joke-mobile"]`
 )
@@ -70,25 +88,31 @@ const btnHeaderJokeEl = document.querySelector(
   `[data-element="btn-header-joke"]`
 )
 const modalJokesEl = document.querySelector(`[data-element="modal-jokes"]`)
-const modalCloseEl = document.querySelector(`[data-element="modal-close"]`)
-const btnModalCloseEl = document.querySelector(
-  `[data-element="btn-modal-close"]`
-)
+
 
 btnHeaderJokeMobileEl.addEventListener(`click`, (e) => {
   e.preventDefault()
-  modalJokesEl.setAttribute(openAttr, true)
+  modalJokesEl.setAttribute(ariaExpandedAttr, true)
 })
 btnHeaderJokeEl.addEventListener(`click`, (e) => {
   e.preventDefault()
-  modalJokesEl.setAttribute(openAttr, true)
+  modalJokesEl.setAttribute(ariaExpandedAttr, true)
 })
 
-modalCloseEl.addEventListener(`click`, (e) => {
-  e.preventDefault()
-  modalJokesEl.removeAttribute(openAttr)
-})
-btnModalCloseEl.addEventListener(`click`, (e) => {
-  e.preventDefault()
-  modalJokesEl.removeAttribute(openAttr)
+
+// Image Modal
+const srcAttr = `src`
+const imgEls = document.querySelectorAll(`img:not(.modal-dialog-image)`)
+const modalImageEl = document.querySelector(`[data-element="modal-image"]`)
+
+imgEls.forEach(imgEl => {
+  imgEl.addEventListener(`click`, (e) => {
+    e.preventDefault()
+    const src = imgEl.getAttribute(srcAttr)
+
+    if (modalImageEl) {
+      modalImageEl.querySelector(`img.modal-dialog-image`).setAttribute(srcAttr, src)
+      modalImageEl.setAttribute(ariaExpandedAttr, true)
+    }
+  })
 })
